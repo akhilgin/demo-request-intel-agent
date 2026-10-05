@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key><string>com.example.demo-intel</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/sh</string>
+    <string>/REPLACE/WITH/PATH/demo-request-intel-agent/run_local.sh</string>
+  </array>
+  <!-- Fires at minute 20 of every hour -->
+  <key>StartCalendarInterval</key>
+  <dict><key>Minute</key><integer>20</integer></dict>
+  <key>StandardErrorPath</key><string>/tmp/com.example.demo-intel.err</string>
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>PATH</key><string>/usr/local/bin:/usr/bin:/bin</string>
+  </dict>
+</dict>
+</plist>

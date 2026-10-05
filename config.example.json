@@ -1,0 +1,38 @@
+{
+  "_comment": "Copy to config.json and edit. Field names below are examples; map them to your own Salesforce schema.",
+  "salesforce": {
+    "api_version": "v60.0",
+    "sf_cli_org": "my-org-alias",
+    "instance_url_env": "SF_INSTANCE_URL",
+    "access_token_env": "SF_ACCESS_TOKEN"
+  },
+  "fields": {
+    "demo_flag": "Demo_Request_Submitted__c",
+    "demo_date": "Demo_Request_Date__c",
+    "linkedin": "LinkedIn_Profile__c",
+    "source": "Original_Source__c",
+    "medium": "Original_Medium__c",
+    "campaign": "Original_Campaign__c",
+    "term": "Original_Term__c",
+    "landing_page": "First_Landing_Page__c"
+  },
+  "lookback_days": 2,
+  "limit": 50,
+  "include_campaign_activity": true,
+  "target_list": "sample_data/target_accounts_sample.csv",
+  "internal_domains": ["example.com"],
+  "extra_freemail_domains": [],
+  "low_fit_tiers": ["C"],
+  "state_path": "state/posted_ids.json",
+  "slack": {
+    "token_env": "SLACK_BOT_TOKEN",
+    "test_user_id": "U_REPLACE_ME",
+    "live_channel_id": "C_REPLACE_ME"
+  },
+  "llm": {
+    "enabled": false,
+    "model": "claude-sonnet-5-5",
+    "max_tokens": 400,
+    "api_key_env": "ANTHROPIC_API_KEY"
+  }
+}

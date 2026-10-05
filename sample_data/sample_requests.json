@@ -1,0 +1,36 @@
+{
+  "contacts": [
+    {"Id": "003FAKE000000001", "FirstName": "Jordan", "LastName": "Rivera", "Name": "Jordan Rivera",
+     "Email": "jordan.rivera@acme.test", "Title": "VP of Demand Generation", "AccountId": "001FAKE000000001",
+     "Account": {"Name": "Acme Corp", "Owner": {"Name": "Sam Example"}},
+     "CreatedDate": "2026-01-15T16:02:11.000+0000", "Demo_Request_Date__c": "2026-01-15",
+     "LinkedIn_Profile__c": "https://www.linkedin.com/in/example-jordan-rivera",
+     "Original_Source__c": "Paid Search", "Original_Medium__c": "cpc", "Original_Campaign__c": "brand-q1",
+     "Original_Term__c": "marketing automation", "First_Landing_Page__c": "https://example.test/pricing"},
+    {"Id": "003FAKE000000002", "FirstName": "Pat", "LastName": "Lee", "Name": "Pat Lee",
+     "Email": "pat@gmail.com", "Title": "Founder", "AccountId": null, "Account": null,
+     "Demo_Request_Date__c": "2026-01-15"},
+    {"Id": "003FAKE000000003", "FirstName": "Chris", "LastName": "Teammate", "Name": "Chris Teammate",
+     "Email": "chris@example.com", "Title": "QA", "AccountId": null, "Account": null,
+     "Demo_Request_Date__c": "2026-01-15"},
+    {"Id": "003FAKE000000004", "FirstName": "Robin", "LastName": "Stone", "Name": "Robin Stone",
+     "Email": "robin@unlisted.test", "Title": "Director", "AccountId": "001FAKE000000004",
+     "Account": {"Name": "Unlisted Inc", "Owner": {"Name": "Sam Example"}},
+     "Demo_Request_Date__c": "2026-01-15"},
+    {"Id": "003FAKE000000005", "FirstName": "Alex", "LastName": "Kim", "Name": "Alex Kim",
+     "Email": "alex.kim@initech.test", "Title": "Marketing Manager", "AccountId": "001FAKE000000005",
+     "Account": {"Name": "Initech", "Owner": {"Name": "Taylor Sample"}},
+     "Demo_Request_Date__c": "2026-01-15", "Original_Source__c": "Organic", "Original_Medium__c": "None"}
+  ],
+  "opportunities": {
+    "001FAKE000000001": [
+      {"Id": "006FAKE000000001", "Name": "Acme Corp - Expansion", "StageName": "Discovery", "Amount": 48000, "Type": "Existing Business"}
+    ]
+  },
+  "campaign_activity": {
+    "003FAKE000000001": [
+      {"Campaign": {"Name": "Spring Webinar"}, "Status": "Attended"},
+      {"Campaign": {"Name": "Product Newsletter"}, "Status": "Sent"}
+    ]
+  }
+}
